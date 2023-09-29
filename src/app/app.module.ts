@@ -24,7 +24,6 @@ import { EditarPedidoComponent } from './public/pages/client-view/editar-pedido/
 import { NuevoPedidoComponent } from './public/pages/client-view/nuevo-pedido/nuevo-pedido.component';
 import { MiPedidoComponent } from './public/pages/client-view/mi-pedido/mi-pedido.component';
 import { MisPedidosComponent } from './public/pages/client-view/mis-pedidos/mis-pedidos.component';
-import { VerPedidosComponent } from './public/pages/client-view/ver-pedidos/ver-pedidos.component';
 import { PedidoComponent } from './public/pages/expert-view/pedido/pedido.component';
 
 
@@ -50,7 +49,6 @@ import { PedidoComponent } from './public/pages/expert-view/pedido/pedido.compon
     NuevoPedidoComponent,
     MiPedidoComponent,
     MisPedidosComponent,
-    VerPedidosComponent,
     PedidoComponent
   ],
     imports: [

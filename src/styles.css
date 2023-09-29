@@ -1,9 +1,4 @@
-@import url(./assets/tokens.css);
-@import url(./assets/colors.module.css);
-@import url(./assets/typography.module.css);
-@import url(./assets/theme.light.css) (prefers-color-scheme: light);
-@import url(./assets/theme.dark.css) (prefers-color-scheme: dark);
-
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

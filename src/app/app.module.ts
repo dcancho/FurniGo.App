@@ -25,6 +25,8 @@ import { NuevoPedidoComponent } from './public/pages/client-view/nuevo-pedido/nu
 import { MiPedidoComponent } from './public/pages/client-view/mi-pedido/mi-pedido.component';
 import { MisPedidosComponent } from './public/pages/client-view/mis-pedidos/mis-pedidos.component';
 import { PedidoComponent } from './public/pages/expert-view/pedido/pedido.component';
+import { MatCardModule } from '@angular/material/card';
+import {MatButtonModule} from "@angular/material/button";
 
 
 @NgModule({
@@ -55,7 +57,9 @@ import { PedidoComponent } from './public/pages/expert-view/pedido/pedido.compon
         BrowserModule,
         AppRoutingModule,
         BrowserAnimationsModule,
-        MatToolbarModule
+        MatToolbarModule,
+        MatCardModule,
+        MatButtonModule
     ],
   providers: [],
   bootstrap: [AppComponent]

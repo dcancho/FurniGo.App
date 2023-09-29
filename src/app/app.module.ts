@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppNavBarComponent } from './public/components/nav-bar/app-nav-bar.component';
-import {MatToolbarModule} from "@angular/material/toolbar";
+import { MatToolbarModule } from "@angular/material/toolbar";
 import { ProfileCardComponent } from './public/components/profile-card/profile-card.component';
 import { UserTagComponent } from './public/components/user-tag/user-tag.component';
 import { StatusTagComponent } from './public/components/status-tag/status-tag.component';
@@ -26,8 +26,9 @@ import { MiPedidoComponent } from './public/pages/client-view/mi-pedido/mi-pedid
 import { MisPedidosComponent } from './public/pages/client-view/mis-pedidos/mis-pedidos.component';
 import { PedidoComponent } from './public/pages/expert-view/pedido/pedido.component';
 import { MatCardModule } from '@angular/material/card';
-import {MatButtonModule} from "@angular/material/button";
-
+import { MatButtonModule } from "@angular/material/button";
+import { MatIconModule } from "@angular/material/icon";
+import { MatSidenavModule } from "@angular/material/sidenav";
 
 @NgModule({
   declarations: [
@@ -53,14 +54,16 @@ import {MatButtonModule} from "@angular/material/button";
     MisPedidosComponent,
     PedidoComponent
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        BrowserAnimationsModule,
-        MatToolbarModule,
-        MatCardModule,
-        MatButtonModule
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatCardModule,
+    MatButtonModule,
+    MatIconModule,
+    MatSidenavModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

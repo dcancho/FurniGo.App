@@ -1,0 +1,123 @@
+<form class="data-form">
+
+  <div class="user-form" *ngIf="typeUser === 'client'; else ShowExpertForm">
+    <mat-form-field class="field-full-width">
+      <mat-label>Nombre</mat-label>
+      <input matInput type="text" [(ngModel)]="client.name" name="clientName">
+      <button *ngIf="client.name" matSuffix mat-icon-button aria-label="Clear" (click)="client.name=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+
+    <mat-form-field class="field-full-width">
+      <mat-label>Apellido</mat-label>
+      <input matInput type="text" [(ngModel)]="client.lastname" name="clientLastName">
+      <button *ngIf="client.lastname" matSuffix mat-icon-button aria-label="Clear" (click)="client.lastname=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+
+    <mat-form-field class="field-full-width">
+      <mat-label>Correo electrónico</mat-label>
+      <input matInput type="email" [(ngModel)]="client.email" name="clientEmail">
+      <button *ngIf="client.email" matSuffix mat-icon-button aria-label="Clear" (click)="client.email=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+
+    <mat-form-field class="field-full-width">
+      <mat-label>Teléfono</mat-label>
+      <span matPrefix>+51 &nbsp;</span>
+      <input matInput type="tel" [(ngModel)]="client.phone" name="clientPhone">
+      <button *ngIf="client.phone" matSuffix mat-icon-button aria-label="Clear" (click)="client.phone=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+
+    <div class="buttons">
+      <button mat-fab extended class="button-done">Publicar pedido
+        <mat-icon>done</mat-icon>
+      </button>
+      <button mat-fab extended color="warn" class="button-warn">Cancelar pedido
+        <mat-icon>cancel</mat-icon>
+      </button>
+    </div>
+  </div>
+
+  <ng-template #ShowExpertForm>
+    <mat-form-field class="field-full-width">
+      <mat-label>Nombre</mat-label>
+      <input matInput type="text" [(ngModel)]="expert.name" name="expertName">
+      <button *ngIf="expert.name" matSuffix mat-icon-button aria-label="Clear" (click)="expert.name=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+
+    <mat-form-field class="field-full-width">
+      <mat-label>Apellido</mat-label>
+      <input matInput type="text" [(ngModel)]="expert.lastname" name="expertLastName">
+      <button *ngIf="expert.lastname" matSuffix mat-icon-button aria-label="Clear" (click)="expert.lastname=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+
+    <mat-form-field class="field-full-width">
+      <mat-label>Correo electrónico</mat-label>
+      <input matInput type="email" [(ngModel)]="expert.email" name="expertEmail">
+      <button *ngIf="expert.email" matSuffix mat-icon-button aria-label="Clear" (click)="expert.email=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+
+    <mat-form-field class="field-full-width">
+      <mat-label>Nombre Comercial</mat-label>
+      <input matInput type="text" [(ngModel)]="expert.comercialName" name="expertComercialName">
+      <button *ngIf="expert.comercialName" matSuffix mat-icon-button aria-label="Clear" (click)="expert.comercialName=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+
+    <mat-form-field class="field-full-width">
+      <mat-label>RUC</mat-label>
+      <input matInput type="tel" [(ngModel)]="expert.ruc" name="expertRUC">
+      <button *ngIf="expert.ruc" matSuffix mat-icon-button aria-label="Clear" (click)="expert.ruc=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+
+    <mat-form-field class="field-full-width">
+      <mat-label>Teléfono</mat-label>
+      <span matPrefix>+51 &nbsp;</span>
+      <input matInput type="tel" [(ngModel)]="expert.phone" name="expertPhone">
+      <button *ngIf="expert.phone" matSuffix mat-icon-button aria-label="Clear" (click)="expert.phone=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+
+    <mat-form-field class="field-full-width">
+      <mat-label>Teléfono 2</mat-label>
+      <span matPrefix>+51 &nbsp;</span>
+      <input matInput type="tel" [(ngModel)]="expert.phone2" name="expertPhone2">
+      <button *ngIf="expert.phone2" matSuffix mat-icon-button aria-label="Clear" (click)="expert.phone2=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+
+    <mat-form-field class="field-full-width">
+      <mat-label>Dirección</mat-label>
+      <input matInput type="tel" [(ngModel)]="expert.address" name="expertAddress">
+      <button *ngIf="expert.address" matSuffix mat-icon-button aria-label="Clear" (click)="expert.address=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+
+    <div class="buttons">
+      <button mat-fab extended class="button-done">Publicar pedido
+        <mat-icon>done</mat-icon>
+      </button>
+      <button mat-fab extended color="warn" class="button-warn">Cancelar pedido
+        <mat-icon>cancel</mat-icon>
+      </button>
+    </div>
+  </ng-template>
+</form>

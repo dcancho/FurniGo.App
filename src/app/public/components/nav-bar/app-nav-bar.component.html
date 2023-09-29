@@ -1,15 +1,8 @@
-<mat-toolbar>
-    <mat-toolbar-row class="toolbar surface">
-        <div class="navbar">
-            <span class="brand">FurniGo</span>
-            <div class="navigator">
-                <button mat-button [routerLink]="button1Link">{{ button1Text }}</button>
-                <button mat-button [routerLink]="button2Link">{{ button2Text }}</button>
-                <app-profile-card></app-profile-card>
-            </div>
-        </div>
-    </mat-toolbar-row >
-    <mat-toolbar-row class="toolbar surface">
-        <app-navigation-context-bar></app-navigation-context-bar>
-    </mat-toolbar-row>
+<mat-toolbar class="toolbar surface navbar">
+    <span class="brand">FurniGo</span>
+    <div class="navigator">
+        <button mat-button [routerLink]="button1Link">{{ button1Text }}</button>
+        <button mat-button [routerLink]="button2Link">{{ button2Text }}</button>
+        <app-profile-card></app-profile-card>
+    </div>
 </mat-toolbar>

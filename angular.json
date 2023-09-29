@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "furnigo": {
+    "FurniGo": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/furnigo",
+            "outputPath": "dist/furni-go",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -25,6 +25,12 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/deeppurple-amber.css",
+              "src/assets/colors.module.css",
+              "src/assets/theme.dark.css",
+              "src/assets/theme.light.css",
+              "src/assets/tokens.css",
+              "src/assets/typography.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -60,10 +66,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "furnigo:build:production"
+              "browserTarget": "FurniGo:build:production"
             },
             "development": {
-              "browserTarget": "furnigo:build:development"
+              "browserTarget": "FurniGo:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +77,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "furnigo:build"
+            "browserTarget": "FurniGo:build"
           }
         },
         "test": {
@@ -87,6 +93,7 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.css"
             ],
             "scripts": []

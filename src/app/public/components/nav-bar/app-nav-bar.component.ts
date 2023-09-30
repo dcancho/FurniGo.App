@@ -18,16 +18,20 @@ export class AppNavBarComponent {
     switch(this.userState){
       case USER_STATE.CLIENT: {
         this.button1Text = "Mis Pedidos"
-        this.button1Link = "/client/order/list"
+        this.button1Link = "/order/list"
         this.button2Text = "Nuevo Pedido"
-        this.button2Link = "/client/order/new"
+        this.button2Link = "/order/new"
         break;
       }
       case USER_STATE.EXPERT: {
         this.button1Text = "Mis Pedidos"
-        this.button1Link = "/expert/order/list"
+        this.button1Link = "order/list"
         this.button2Text = "Buscar Pedidos"
-        this.button2Link = "/expert/order/search"
+        this.button2Link = "order/search"
+        break;
+      }
+      default: {
+        console.log("error de ambiguiedad cliente/ experto");
       }
     }
   }

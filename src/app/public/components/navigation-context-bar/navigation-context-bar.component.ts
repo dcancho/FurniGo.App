@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./navigation-context-bar.component.css']
 })
 export class NavigationContextBarComponent {
-
+  contextTitle: string = "Pagina Actual"
 }

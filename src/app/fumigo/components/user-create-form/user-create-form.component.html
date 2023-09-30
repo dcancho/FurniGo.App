@@ -1,0 +1,34 @@
+<form class="create-form">
+
+  <mat-form-field class="field-full-width">
+    <mat-label>Nombre del Pedido</mat-label>
+    <input matInput placeholder="Ex. Mueble">
+  </mat-form-field>
+
+  <mat-form-field class="field-full-width">
+    <mat-label>Presupuesto</mat-label>
+    <input matInput placeholder="Ex. S/ 50.00">
+  </mat-form-field>
+
+  <mat-form-field class="field-full-width">
+    <mat-label>Plazo de Entrega</mat-label>
+    <input matInput [matDatepicker]="picker">
+    <mat-hint>MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+  <mat-form-field class="field-full-width">
+    <mat-label>Detalles</mat-label>
+    <input matInput placeholder="Ex. Pizza">
+  </mat-form-field>
+
+  <div class="buttons">
+    <button mat-fab extended class="button-done">Publicar pedido
+      <mat-icon>done</mat-icon>
+    </button>
+    <button mat-fab extended color="warn" class="button-warn">Cancelar pedido
+      <mat-icon>cancel</mat-icon>
+    </button>
+  </div>
+</form>

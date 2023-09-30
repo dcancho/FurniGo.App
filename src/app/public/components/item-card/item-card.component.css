@@ -1,0 +1,52 @@
+mat-card {
+    width: 100%;
+    background-color: var( --md-sys-color-surface-light);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 12px;
+}
+
+mat-card-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.media-container {
+    width: 15rem;
+}
+
+.three-d-viewer {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.media-placeholder {
+    width: 100%;
+    height: 15rem;
+    background-color: var(--md-sys-color-surface-variant);
+    border-radius: 0px 12px 12px 0px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    border-radius: 100px;
+    height: 2.5rem;
+    font-size: 1rem;
+    background-color: var(--md-sys-color-primary-light);
+    color: white !important;
+}
+
+.horizontal-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}

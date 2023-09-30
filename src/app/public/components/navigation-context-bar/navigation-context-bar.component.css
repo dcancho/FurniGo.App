@@ -1,0 +1,23 @@
+.nav-ctx-bar {
+    width: 100%;
+    height: 30px;
+    
+    background: var(--furni-go-sys-light-surface-variant, #F5DED5);
+
+    display: flex;
+    justify-content: left;
+
+    justify-content: space-between;
+    padding: 0 4.2rem;
+}
+
+span {
+    color: var(--furni-go-sys-light-on-surface-variant, #53443E);
+    background: transparent;
+
+    font-family: Robot;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}

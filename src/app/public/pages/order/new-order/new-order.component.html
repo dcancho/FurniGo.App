@@ -1,0 +1,12 @@
+<!--  Create Form-->
+<div class="container" *ngIf="typeUser === USER_STATE.CLIENT">
+  <app-user-create-form></app-user-create-form>
+  <app-three-d-viewer></app-three-d-viewer>
+</div>
+
+<div class="container" *ngIf=" typeUser === USER_STATE.EXPERT">
+  <app-user-modify-form></app-user-modify-form>
+  <app-three-d-viewer></app-three-d-viewer>
+</div>
+
+<!--  Modify Form Expert-->

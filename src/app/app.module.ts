@@ -3,17 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {UserDataFormComponent} from "./fumigo/components/user-data-form/user-data-form.component";
-import {UserCreateFormComponent} from "./fumigo/components/user-create-form/user-create-form.component";
-import {UserModifyFormComponent} from "./fumigo/components/user-modify-form/user-modify-form.component";
-import {MatInputModule} from "@angular/material/input";
-import {MatIconModule} from "@angular/material/icon";
-import {FormsModule} from "@angular/forms";
-import {MatDatepickerModule} from "@angular/material/datepicker";
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatNativeDateModule} from '@angular/material/core';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatButtonModule} from "@angular/material/button";
+import { UserCreateFormComponent } from "./fumigo/components/user-create-form/user-create-form.component";
+import { UserModifyFormComponent } from "./fumigo/components/user-modify-form/user-modify-form.component";
+import { MatInputModule } from "@angular/material/input";
+import { FormsModule } from "@angular/forms";
+import { MatDatepickerModule } from "@angular/material/datepicker";
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatNativeDateModule } from '@angular/material/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppNavBarComponent } from './public/components/nav-bar/app-nav-bar.component';
 import { MatToolbarModule } from "@angular/material/toolbar";
@@ -53,18 +49,6 @@ import { ProfileComponent } from './public/pages/me/profile/profile.component';
     UserDataFormComponent,
     UserCreateFormComponent,
     UserModifyFormComponent,
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    MatInputModule,
-    MatIconModule,
-    FormsModule,
-    MatDatepickerModule,
-    MatFormFieldModule,
-    MatNativeDateModule,
-    BrowserAnimationsModule,
-    MatButtonModule,
     AppNavBarComponent,
     ProfileCardComponent,
     UserTagComponent,
@@ -88,12 +72,16 @@ import { ProfileComponent } from './public/pages/me/profile/profile.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatCardModule,
-    MatButtonModule,
+    MatInputModule,
     MatIconModule,
-    MatSidenavModule
+    FormsModule,
+    MatDatepickerModule,
+    MatFormFieldModule,
+    MatNativeDateModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatCardModule,
+    MatToolbarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

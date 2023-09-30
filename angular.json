@@ -25,6 +25,12 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/deeppurple-amber.css",
+              "src/assets/colors.css",
+              "src/assets/theme.dark.css",
+              "src/assets/theme.light.css",
+              "src/assets/tokens.css",
+              "src/assets/typography.css",
               "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],

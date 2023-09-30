@@ -5,6 +5,7 @@ import { Input } from '@angular/core';
   templateUrl: './three-d-viewer.component.html',
   styleUrls: ['./three-d-viewer.component.css']
 })
+
 export class ThreeDViewerComponent {
 
   @Input() modelPath: string;
@@ -14,9 +15,8 @@ export class ThreeDViewerComponent {
     this.modelPath = 'assets/models/scene.gltf';
     this.viewerType = 'view-model';
     this.validateViewerType();
+    this.checkStyles();
   }
-
-  // Verify that viewerType is either 'view-model' or 'edit-model'. If not, set it to 'view-model' before creating the viewer.
 
   validateViewerType() {
     if (this.viewerType !== 'view-model' && this.viewerType !== 'edit-model') {
@@ -26,23 +26,17 @@ export class ThreeDViewerComponent {
 
   checkStyles() {
     if (this.viewerType === 'edit-model') {
-      // Hide the 'enlarge-view' button
-      const enlargeViewButton = document.querySelector('.enlarge-button');
-      if (enlargeViewButton) {
-        enlargeViewButton.classList.add('hidden');
+      const uploadButton = document.getElementsByClassName('upload-button');
+      console.log(uploadButton);
+      if (uploadButton.length > 0) {
+        uploadButton[0].classList.remove('secondary-action');
+        uploadButton[0].classList.add('primary-action');
       }
 
-      // Set the other two buttons to use the 'primary action' class
-      const uploadButton = document.querySelector('.upload-button');
-      if (uploadButton) {
-        uploadButton.classList.remove('secondary-action');
-        uploadButton.classList.add('primary-action');
-      }
-
-      const downloadButton = document.querySelector('.download-button');
-      if (downloadButton) {
-        downloadButton.classList.remove('secondary-action');
-        downloadButton.classList.add('primary-action');
+      const downloadButton = document.getElementsByClassName('download-button');
+      if (downloadButton.length > 0) {
+        downloadButton[0].classList.remove('secondary-action');
+        downloadButton[0].classList.add('primary-action');
       }
     }
   }

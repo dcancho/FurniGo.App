@@ -60,3 +60,7 @@ mat-card-content {
 mat-card {
   width: fit-content;
 }
+
+.hidden {
+  display: none;
+}

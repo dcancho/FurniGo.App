@@ -3,5 +3,12 @@
   flex: 1 0 0;
   justify-content: center;
   align-items: center;
-  margin-top: 5%;
+
+  margin: 10px;
+}
+
+img {
+  align-self: baseline;
+  padding-top: 35px;
+  height: 350px;
 }

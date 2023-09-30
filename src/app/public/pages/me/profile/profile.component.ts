@@ -8,5 +8,5 @@ import {USER_STATE} from "../../../../app.component";
 })
 export class ProfileComponent {
 
-    @Input() userState = USER_STATE;
+    @Input() userState = USER_STATE.CLIENT;
 }

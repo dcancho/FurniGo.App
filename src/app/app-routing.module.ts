@@ -1,4 +1,4 @@
-import { ComponentRef, NgModule } from '@angular/core';
+import { ComponentRef, EventEmitter, NgModule, Output } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PageNotFoundComponent } from './public/pages/page-not-found/page-not-found.component';
 import { OrdersComponent } from './public/pages/order/orders/orders.component';
@@ -21,4 +21,5 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule { 
+}

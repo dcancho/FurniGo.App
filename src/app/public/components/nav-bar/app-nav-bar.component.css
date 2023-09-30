@@ -7,7 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 15%;
+    gap: 30rem;
     
     background: var(--furni-go-sys-light-surface, #FFF8F6);
 }
@@ -32,13 +32,14 @@
     line-height: 28px;
 }
 
-button {
+.button {
     border: 0px;
     
     border-radius: 100px;
     background: var(--furni-go-sys-light-primary, #A43D00);
     padding: 10px 24px;
-    
+
+      
     color: var(--furni-go-sys-light-on-primary, #FFF);
     text-align: center;
 
@@ -47,4 +48,8 @@ button {
     font-style: normal;
     font-weight: 500;
     line-height: 20px;
+}
+
+.button * {
+    color: white;
 }

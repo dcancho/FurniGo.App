@@ -1,29 +1,32 @@
 <mat-card>
-  <mat-card-content>
-    <mat-card-header>{{ itemTitle }}</mat-card-header>
-    <p class="text-1-0">Pedido {{ orderNumber }}</p>
-    <div class="statustag">
-      <p class="text-9">{{ status }}</p>
+  <mat-card-header>{{ itemTitle }}</mat-card-header>
+  <mat-card-content class="horizontal-layout">
+    <div class="text-container">
+      <div class="identification-container horizontal-layout">
+        <p class="text-1-0">Pedido {{ orderNumber }}</p>
+        <app-status-tag></app-status-tag>
+      </div>
+      <div class="details">
+        <div class="group-1">
+          <p class="text-1">Fecha de entrega: {{ maxDate | date }}</p>
+        </div>
+        <div class="group-2">
+          <p class="text-4">Precio acordado: {{ maxBudget }}</p>
+        </div>
+        <div class="group-3">
+          <p class="text-5">Experto a cargo: {{ user }}</p>
+        </div>
+        <div class="group-4">
+          <p class="text-7">Detalles:</p>
+          <div class="rectangle-3">
+            <p class="text-8">{{ details }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="media-container">
+      <app-three-d-viewer></app-three-d-viewer>
     </div>
   </mat-card-content>
 
-  <div class="details">
-    <div class="group-1">
-      <p class="text-1">Fecha de entrega:  {{ maxDate | date }}</p>
-    </div>
-    <div class="group-2">
-      <p class="text-4">Precio acordado:  {{ maxBudget }}</p>
-    </div>
-    <div class="group-3">
-      <p class="text-5">Experto a cargo:  {{ user }}</p>
-    </div>
-    <div class="group-4">
-      <p class="text-7">Detalles:</p>
-      <div class="rectangle-3">
-        <p class="text-8">{{ details }}</p>
-      </div>
-    </div>
-  </div>
 </mat-card>
-
-

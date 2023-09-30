@@ -50,3 +50,11 @@ button {
     align-items: center;
     gap: 1.5rem;
 }
+
+.mat-card {
+    width: 15rem;
+}
+
+div.text-container {
+    width: 10rem !important;
+}

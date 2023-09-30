@@ -1,14 +1,9 @@
 mat-card {
-  height: 467px;
-  width: 1000px;
+  height: 30rem;
+  width: 50%px;
 }
 mat-card-content {
-  height: 180px;
-  width: 100px;
-}
-.statustag {
-  height: 31px;
-  width: 113px;
+  height: 100%;
 }
 .container {
   height: 2px;
@@ -46,6 +41,7 @@ mat-card-header {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 15px;
+  padding: 1rem;
 }
 .group-1 {
   height: 28px;
@@ -134,4 +130,20 @@ mat-card-header {
   color: #201a18;
 }
 
+.horizontal-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
 
+.identification-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  vertical-align: middle;
+  gap: 1.5rem;
+  width: fit-content;
+}

@@ -19,14 +19,6 @@ import { VerticalItemCardComponent } from './public/components/vertical-item-car
 import { OfferCardComponent } from './public/components/offer-card/offer-card.component';
 import { OrderDetailsComponent } from './public/components/order-details/order-details.component';
 import { PageNotFoundComponent } from './public/pages/page-not-found/page-not-found.component';
-import { ClienteMisPedidosComponent } from './public/pages/client-view/cliente-mis-pedidos/cliente-mis-pedidos.component';
-import { ClienteMiPedidoComponent } from './public/pages/client-view/cliente-mi-pedido/cliente-mi-pedido.component';
-import { ClienteNuevoPedidoComponent } from './public/pages/client-view/cliente-nuevo-pedido/cliente-nuevo-pedido.component';
-import { ClientePerfilComponent } from './public/pages/client-view/cliente-perfil/cliente-perfil.component';
-import { ExpertoMisPedidosComponent } from './public/pages/expert-view/experto-mis-pedidos/experto-mis-pedidos.component';
-import { ExpertoPedidoComponent } from './public/pages/expert-view/experto-pedido/experto-pedido.component';
-import { ExpertoVerPedidosComponent } from './public/pages/expert-view/experto-ver-pedidos/experto-ver-pedidos.component';
-import { ExpertoPerfilComponent } from './public/pages/expert-view/experto-perfil/experto-perfil.component';
 
 
 @NgModule({
@@ -45,15 +37,7 @@ import { ExpertoPerfilComponent } from './public/pages/expert-view/experto-perfi
     VerticalItemCardComponent,
     OfferCardComponent,
     OrderDetailsComponent,
-    PageNotFoundComponent,
-    ClienteMisPedidosComponent,
-    ClienteMiPedidoComponent,
-    ClienteNuevoPedidoComponent,
-    ClientePerfilComponent,
-    ExpertoMisPedidosComponent,
-    ExpertoPedidoComponent,
-    ExpertoVerPedidosComponent,
-    ExpertoPerfilComponent
+    PageNotFoundComponent
   ],
     imports: [
         BrowserModule,

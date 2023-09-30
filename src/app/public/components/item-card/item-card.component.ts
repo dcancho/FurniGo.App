@@ -19,7 +19,7 @@ export class ItemCardComponent {
     this.itemTitle = "Nombre del pedido";
     this.orderNumber = 123456;
     this.maxDate = new Date();
-    this.linkToItem = "/";
+    this.linkToItem = "/order/info";
     this.imgPath = "https://picsum.photos/200/300";
     this.maxBudget = 250.00;
     this.userType = "experto";

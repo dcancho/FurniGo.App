@@ -1,13 +1,4 @@
-<app-nav-bar></app-nav-bar>
+<app-nav-bar [userState]="this.userState">
+</app-nav-bar>
 
-<app-navigation-context-bar></app-navigation-context-bar>
-
-<div class="item-card-container">
-    <app-item-card></app-item-card>
-    <app-item-card></app-item-card>
-    <app-item-card></app-item-card>
-    <app-item-card></app-item-card>
-    <app-item-card></app-item-card>
-    <app-item-card></app-item-card>
-    <app-item-card></app-item-card>
-</div>
+<router-outlet></router-outlet>

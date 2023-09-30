@@ -36,6 +36,12 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from "@angular/material/button";
 import { MatIconModule } from "@angular/material/icon";
 import { MatSidenavModule } from "@angular/material/sidenav";
+import { PageNotFoundComponent } from './public/pages/page-not-found/page-not-found.component';
+import { OrdersComponent } from './public/pages/order/orders/orders.component';
+import { OrderInfoComponent } from './public/pages/order/order-info/order-info.component';
+import { NewOrderComponent } from './public/pages/order/new-order/new-order.component';
+import { SearchOrderComponent } from './public/pages/order/search-order/search-order.component';
+import { ProfileComponent } from './public/pages/me/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -56,13 +62,12 @@ import { MatSidenavModule } from "@angular/material/sidenav";
     VerticalItemCardComponent,
     OfferCardComponent,
     OrderDetailsComponent,
-    VerOfertasComponent,
-    PerfilComponent,
-    EditarPedidoComponent,
-    NuevoPedidoComponent,
-    MiPedidoComponent,
-    MisPedidosComponent,
-    PedidoComponent
+    PageNotFoundComponent,
+    OrdersComponent,
+    OrderInfoComponent,
+    NewOrderComponent,
+    SearchOrderComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

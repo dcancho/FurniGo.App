@@ -19,14 +19,11 @@ import { VerticalItemCardComponent } from './public/components/vertical-item-car
 import { OfferCardComponent } from './public/components/offer-card/offer-card.component';
 import { OrderDetailsComponent } from './public/components/order-details/order-details.component';
 import { PageNotFoundComponent } from './public/pages/page-not-found/page-not-found.component';
-import { ClienteMisPedidosComponent } from './public/pages/client-view/cliente-mis-pedidos/cliente-mis-pedidos.component';
-import { ClienteMiPedidoComponent } from './public/pages/client-view/cliente-mi-pedido/cliente-mi-pedido.component';
-import { ClienteNuevoPedidoComponent } from './public/pages/client-view/cliente-nuevo-pedido/cliente-nuevo-pedido.component';
-import { ClientePerfilComponent } from './public/pages/client-view/cliente-perfil/cliente-perfil.component';
-import { ExpertoMisPedidosComponent } from './public/pages/expert-view/experto-mis-pedidos/experto-mis-pedidos.component';
-import { ExpertoPedidoComponent } from './public/pages/expert-view/experto-pedido/experto-pedido.component';
-import { ExpertoVerPedidosComponent } from './public/pages/expert-view/experto-ver-pedidos/experto-ver-pedidos.component';
-import { ExpertoPerfilComponent } from './public/pages/expert-view/experto-perfil/experto-perfil.component';
+import { OrdersComponent } from './public/pages/order/orders/orders.component';
+import { OrderInfoComponent } from './public/pages/order/order-info/order-info.component';
+import { NewOrderComponent } from './public/pages/order/new-order/new-order.component';
+import { SearchOrderComponent } from './public/pages/order/search-order/search-order.component';
+import { ProfileComponent } from './public/pages/me/profile/profile.component';
 
 
 @NgModule({
@@ -46,14 +43,11 @@ import { ExpertoPerfilComponent } from './public/pages/expert-view/experto-perfi
     OfferCardComponent,
     OrderDetailsComponent,
     PageNotFoundComponent,
-    ClienteMisPedidosComponent,
-    ClienteMiPedidoComponent,
-    ClienteNuevoPedidoComponent,
-    ClientePerfilComponent,
-    ExpertoMisPedidosComponent,
-    ExpertoPedidoComponent,
-    ExpertoVerPedidosComponent,
-    ExpertoPerfilComponent
+    OrdersComponent,
+    OrderInfoComponent,
+    NewOrderComponent,
+    SearchOrderComponent,
+    ProfileComponent
   ],
     imports: [
         BrowserModule,

@@ -7,7 +7,7 @@ import {USER_STATE} from "../../../app.component";
   styleUrls: ['./user-data-form.component.css']
 })
 export class UserDataFormComponent implements OnInit{
-  typeUser = USER_STATE.CLIENT;
+  typeUser = USER_STATE.EXPERT;
   client = {
     name: '',
     lastname: '',

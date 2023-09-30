@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {USER_STATE} from "../../../../app.component";
 
 @Component({
@@ -8,5 +8,5 @@ import {USER_STATE} from "../../../../app.component";
 })
 export class ProfileComponent {
 
-    protected readonly USER_STATE = USER_STATE;
+    @Input() userState = USER_STATE;
 }

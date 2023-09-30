@@ -1,0 +1,137 @@
+mat-card {
+  height: 467px;
+  width: 1000px;
+}
+mat-card-content {
+  height: 180px;
+  width: 100px;
+}
+.statustag {
+  height: 31px;
+  width: 113px;
+}
+.container {
+  height: 2px;
+  width: 2px;
+}
+mat-card-header {
+  text-align: left;
+  vertical-align: middle;
+  font-size: 57px;
+  font-family: Roboto;
+  line-height: 64%;
+  color: #201a18;
+}
+.text-1-0 {
+  text-align: left;
+  vertical-align: middle;
+  font-size: 24px;
+  font-family: Roboto;
+  line-height: 32%;
+  color: #201a18;
+}
+.text-9 {
+  text-align: left;
+  vertical-align: middle;
+  font-size: 14px;
+  font-family: Roboto;
+  line-height: 20%;
+  color: #201a18;
+}
+
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+}
+.group-1 {
+  height: 28px;
+  width: 344px;
+}
+.text-1 {
+  text-align: left;
+  vertical-align: middle;
+  font-size: 22px;
+  font-family: Roboto;
+  line-height: 28%;
+  color: #201a18;
+}
+.text-2 {
+  text-align: left;
+  vertical-align: middle;
+  font-size: 22px;
+  font-family: Roboto;
+  line-height: 28%;
+  color: #201a18;
+}
+.group-2 {
+  height: 28px;
+  width: 322px;
+}
+.text-3 {
+  text-align: left;
+  vertical-align: middle;
+  font-size: 22px;
+  font-family: Roboto;
+  line-height: 28%;
+  color: #201a18;
+}
+.text-4 {
+  text-align: left;
+  vertical-align: middle;
+  font-size: 22px;
+  font-family: Roboto;
+  line-height: 28%;
+  color: #201a18;
+}
+.group-3 {
+  height: 28px;
+  width: 412px;
+}
+.text-5 {
+  text-align: left;
+  vertical-align: middle;
+  font-size: 22px;
+  font-family: Roboto;
+  line-height: 28%;
+  color: #201a18;
+}
+.text-6 {
+  text-align: left;
+  vertical-align: middle;
+  font-size: 22px;
+  font-family: Roboto;
+  line-height: 28%;
+  color: #201a18;
+}
+.group-4 {
+  height: 133px;
+  width: 601px;
+}
+.text-7 {
+  text-align: left;
+  vertical-align: middle;
+  font-size: 22px;
+  font-family: Roboto;
+  line-height: 28%;
+  color: #201a18;
+}
+.rectangle-3 {
+  border-radius: 12px;
+  height: 133px;
+  width: 380px;
+  background-color: #fff8f6;
+}
+.text-8 {
+  text-align: left;
+  vertical-align: top;
+  font-size: 22px;
+  font-family: Roboto;
+  line-height: 28%;
+  color: #201a18;
+}
+
+

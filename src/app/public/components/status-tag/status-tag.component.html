@@ -1,1 +1,4 @@
-<p>status-tag works!</p>
+<div class="status-tag" [ngClass]="{'green': estado === 'En fabricacion', 'yellow': estado === 'en cola', 'red': estado === 'detenido', 'orange': estado === 'listo'}">
+  <div class="circle"></div>
+  <div class="status-text">{{ textoEstado }}</div>
+</div>

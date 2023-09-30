@@ -1,0 +1,38 @@
+.pedido-card {
+  border-radius: 10px; /* Ajusta el valor según el grado de curvatura que desees */
+  border: 1px solid #ffffff;
+  background-color: #D8C2BA;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  width: 300px;
+}
+
+.pedido-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.pedido-card h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.pedido-info {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.boton-personalizado {
+  border-radius: 10px; /* Ajusta el valor según el grado de curvatura que desees */
+  background-color: #a43d00; /* Fondo de color */
+  color: #fff; /* Color del texto */
+  padding: 10px 20px; /* Espaciado interno para el botón */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px; /* Ajusta el tamaño del texto */
+  cursor: pointer;
+  border: none; /* Sin borde adicional */
+  outline: none; /* Sin contorno al hacer clic */
+}

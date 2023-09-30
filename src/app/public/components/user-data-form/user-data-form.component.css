@@ -1,0 +1,39 @@
+.data-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  margin: 25px 25px;
+}
+
+.field-full-width {
+  width: 100%;
+}
+
+.button-warn {
+  /*  Borde mas grueso*/
+  border: 2px solid #A43D00 !important;
+  /*bacground transparente*/
+  background-color: transparent !important;
+  color: #A43D00 !important;
+  margin-left: 10px !important;
+}
+.button-done{
+  background-color: #A43D00 !important;
+  color: #ffff !important;
+}
+
+.buttons{
+  /*  items right*/
+  justify-content: flex-end;
+  display: flex;
+  margin-top: 20px;
+}
+
+mat-form-field mat-icon{
+  border: solid 1px #000000 !important;
+  border-radius: 50% !important;
+}
+
+mat-form-field{
+  margin-top: 10px;
+}

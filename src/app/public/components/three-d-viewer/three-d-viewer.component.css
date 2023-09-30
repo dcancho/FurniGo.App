@@ -46,7 +46,7 @@ button.secondary-action {
 
 .media-container {
   width: 450px;
-  height: 450px;
+  height: 300px;
   min-width: 450px;
   max-width: 450px;
   background-image: url("https://picsum.photos/400");

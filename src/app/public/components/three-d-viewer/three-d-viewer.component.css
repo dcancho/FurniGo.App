@@ -1,0 +1,66 @@
+button.primary-action {
+    border: 0;
+
+    width: fit-content;
+
+    border-radius: 100px;
+    background: var(--furni-go-sys-light-primary, #A43D00);
+    padding: 10px 24px;
+
+    color: var(--furni-go-sys-light-on-primary, #FFF);
+    text-align: center;
+
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+button.secondary-action {
+  border: 1px solid var(--furni-go-sys-light-outline, #85736D);
+
+  width: fit-content;
+
+  border-radius: 100px;
+  background: none;
+
+  color: var(--furni-go-sys-light-on-surface-variant, #53443E);
+  text-align: center;
+
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.actions-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 10px;
+  max-height: 100%;
+  width: 100%;
+}
+
+.media-container {
+  width: 450px;
+  height: 450px;
+  min-width: 450px;
+  max-width: 450px;
+  background-image: url("https://picsum.photos/400");
+  background-size: cover;
+}
+
+mat-card-content {
+  padding: 0.5rem;
+}
+
+mat-card {
+  width: fit-content;
+}
+
+.hidden {
+  display: none;
+}

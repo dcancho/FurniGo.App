@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-tag.component.css']
 })
 export class UserTagComponent {
-
+  @Input() nombreDeUsuario: string="usuario";
+  @Input() imagenDePerfil: string="none";
 }

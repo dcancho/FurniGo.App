@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {USER_STATE} from "../../../../app.component";
 
 @Component({
   selector: 'app-profile',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class ProfileComponent {
 
+    protected readonly USER_STATE = USER_STATE;
 }

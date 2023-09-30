@@ -18,13 +18,15 @@ import { ThreeDViewerComponent } from './public/components/three-d-viewer/three-
 import { VerticalItemCardComponent } from './public/components/vertical-item-card/vertical-item-card.component';
 import { OfferCardComponent } from './public/components/offer-card/offer-card.component';
 import { OrderDetailsComponent } from './public/components/order-details/order-details.component';
-import { VerOfertasComponent } from './public/pages/client-view/ver-ofertas/ver-ofertas.component';
-import { PerfilComponent } from './public/pages/client-view/perfil/perfil.component';
-import { EditarPedidoComponent } from './public/pages/client-view/editar-pedido/editar-pedido.component';
-import { NuevoPedidoComponent } from './public/pages/client-view/nuevo-pedido/nuevo-pedido.component';
-import { MiPedidoComponent } from './public/pages/client-view/mi-pedido/mi-pedido.component';
-import { MisPedidosComponent } from './public/pages/client-view/mis-pedidos/mis-pedidos.component';
-import { PedidoComponent } from './public/pages/expert-view/pedido/pedido.component';
+import { PageNotFoundComponent } from './public/pages/page-not-found/page-not-found.component';
+import { ClienteMisPedidosComponent } from './public/pages/client-view/cliente-mis-pedidos/cliente-mis-pedidos.component';
+import { ClienteMiPedidoComponent } from './public/pages/client-view/cliente-mi-pedido/cliente-mi-pedido.component';
+import { ClienteNuevoPedidoComponent } from './public/pages/client-view/cliente-nuevo-pedido/cliente-nuevo-pedido.component';
+import { ClientePerfilComponent } from './public/pages/client-view/cliente-perfil/cliente-perfil.component';
+import { ExpertoMisPedidosComponent } from './public/pages/expert-view/experto-mis-pedidos/experto-mis-pedidos.component';
+import { ExpertoPedidoComponent } from './public/pages/expert-view/experto-pedido/experto-pedido.component';
+import { ExpertoVerPedidosComponent } from './public/pages/expert-view/experto-ver-pedidos/experto-ver-pedidos.component';
+import { ExpertoPerfilComponent } from './public/pages/expert-view/experto-perfil/experto-perfil.component';
 
 
 @NgModule({
@@ -43,13 +45,15 @@ import { PedidoComponent } from './public/pages/expert-view/pedido/pedido.compon
     VerticalItemCardComponent,
     OfferCardComponent,
     OrderDetailsComponent,
-    VerOfertasComponent,
-    PerfilComponent,
-    EditarPedidoComponent,
-    NuevoPedidoComponent,
-    MiPedidoComponent,
-    MisPedidosComponent,
-    PedidoComponent
+    PageNotFoundComponent,
+    ClienteMisPedidosComponent,
+    ClienteMiPedidoComponent,
+    ClienteNuevoPedidoComponent,
+    ClientePerfilComponent,
+    ExpertoMisPedidosComponent,
+    ExpertoPedidoComponent,
+    ExpertoVerPedidosComponent,
+    ExpertoPerfilComponent
   ],
     imports: [
         BrowserModule,

@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-
+import { Component, Input } from '@angular/core';
+import { USER_STATE } from 'src/app/app.component';
 
 @Component({
   selector: 'app-nav-bar',
@@ -11,5 +11,24 @@ export class AppNavBarComponent {
   button1Link = '/mis-pedidos';
   button2Text = 'Nuevo pedido';
   button2Link = '/nuevo-pedido';
-  imagePath = 'https://picsum.photos/200/300';
+  
+  @Input() userState = USER_STATE.EXPERT;
+  
+  ngOnInit(){
+    switch(this.userState){
+      case USER_STATE.CLIENT: {
+        this.button1Text = "Mis Pedidos"
+        this.button1Link = "/client/order/list"
+        this.button2Text = "Nuevo Pedido"
+        this.button2Link = "/client/order/new"
+        break;
+      }
+      case USER_STATE.EXPERT: {
+        this.button1Text = "Mis Pedidos"
+        this.button1Link = "/expert/order/list"
+        this.button2Text = "Buscar Pedidos"
+        this.button2Link = "/expert/order/search"
+      }
+    }
+  }
 }

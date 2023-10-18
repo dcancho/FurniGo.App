@@ -34,6 +34,7 @@ import {OrdersComponent} from "./public/pages/order/orders/orders.component";
 import {MatGridListModule} from "@angular/material/grid-list";
 import {OrderInfoComponent} from "./public/pages/order/order-info/order-info.component";
 import {SearchOrderComponent} from "./public/pages/order/search-order/search-order.component";
+import { ThreeViewportComponent } from './public/components/three-viewport/three-viewport.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import {SearchOrderComponent} from "./public/pages/order/search-order/search-ord
     PageNotFoundComponent,
     OrdersComponent,
     OrderInfoComponent,
-    SearchOrderComponent
+    SearchOrderComponent,
+    ThreeViewportComponent
   ],
   imports: [
     BrowserModule,

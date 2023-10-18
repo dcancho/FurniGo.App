@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Input } from '@angular/core';
+import * as THREE from 'three';
+
 @Component({
   selector: 'app-three-d-viewer',
   templateUrl: './three-d-viewer.component.html',

@@ -15,7 +15,7 @@ export class ThreeViewportComponent implements OnInit, AfterViewInit {
   private canvasRef!: ElementRef<HTMLCanvasElement>;
 
   //Stage:
-  @Input() public fieldOfView: number = 1;
+  @Input() public fieldOfView: number = 15;
   @Input('nearClipping') public nearClippingPlane: number = 1;
   @Input('farClipping') public farClippingPlane: number = 1000;
 
@@ -29,7 +29,7 @@ export class ThreeViewportComponent implements OnInit, AfterViewInit {
   private light4!: THREE.PointLight;
   private model: any;
   private directionalLight!: THREE.DirectionalLight;
-
+  private scale = new THREE.Vector3(1, 1,  1);
 
   private get canvas(): HTMLCanvasElement {
     return this.canvasRef.nativeElement;
@@ -45,7 +45,7 @@ export class ThreeViewportComponent implements OnInit, AfterViewInit {
    */
   private animateModel() {
     if(this.model){
-      this.model.rotation.z += 0.01;
+      this.model.rotation.y += 0.01;
     }
   }
 
@@ -77,8 +77,9 @@ export class ThreeViewportComponent implements OnInit, AfterViewInit {
     //* Scene
     this.scene = new THREE.Scene();
     this.scene.background = new THREE.Color(0xd4d4d8)
-    this.loaderGLTF.load('assets/Sample.gltf', (gltf: GLTF) => {
+    this.loaderGLTF.load('assets/Monumento a los cristianos.gltf', (gltf: GLTF) => {
       this.model = gltf.scene.children[0];
+      this.model.scale.copy(this.scale);
       console.log(this.model);
       var box = new THREE.Box3().setFromObject(this.model);
       box.getCenter(this.model.position);
@@ -93,25 +94,25 @@ export class ThreeViewportComponent implements OnInit, AfterViewInit {
       this.nearClippingPlane,
       this.farClippingPlane
     )
-    this.camera.position.x = 100;
-    this.camera.position.y = 100;
-    this.camera.position.z = 100;
+    this.camera.position.x = 50;
+    this.camera.position.y = 50;
+    this.camera.position.z = 50;
     this.ambientLight = new THREE.AmbientLight(0x00000, 100);
     this.scene.add(this.ambientLight);
     this.directionalLight = new THREE.DirectionalLight(0xffdf04, 0.4);
     this.directionalLight.position.set(0, 1, 0);
     this.directionalLight.castShadow = true;
     this.scene.add(this.directionalLight);
-    this.light1 = new THREE.PointLight(0x4b371c, 10);
+    this.light1 = new THREE.PointLight(0x00000, 10);
     this.light1.position.set(0, 200, 400);
     this.scene.add(this.light1);
-    this.light2 = new THREE.PointLight(0x4b371c, 10);
+    this.light2 = new THREE.PointLight(0x00000, 10);
     this.light2.position.set(500, 100, 0);
     this.scene.add(this.light2);
-    this.light3 = new THREE.PointLight(0x4b371c, 10);
+    this.light3 = new THREE.PointLight(0x00000, 10);
     this.light3.position.set(0, 100, -500);
     this.scene.add(this.light3);
-    this.light4 = new THREE.PointLight(0x4b371c, 10);
+    this.light4 = new THREE.PointLight(0x00000, 10);
     this.light4.position.set(-500, 300, 500);
     this.scene.add(this.light4);
   }
@@ -148,6 +149,7 @@ export class ThreeViewportComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit() {
     this.createScene();
+    this.camera.lookAt(this.scene.position);
     this.startRenderingLoop();
     this.createControls();
   }

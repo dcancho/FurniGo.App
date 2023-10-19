@@ -147,3 +147,7 @@ mat-card-header {
   gap: 1.5rem;
   width: fit-content;
 }
+
+.media-container {
+  height: 100%;
+}

@@ -44,23 +44,18 @@ button.secondary-action {
   width: 100%;
 }
 
-.media-container {
-  width: 450px;
-  height: 300px;
-  min-width: 450px;
-  max-width: 450px;
-  background-image: url("https://picsum.photos/400");
-  background-size: cover;
-}
-
 mat-card-content {
   padding: 0.5rem;
+  height: 100%;
+  width: 50%;
 }
 
 mat-card {
   width: fit-content;
+  height: 100%;
 }
 
 .hidden {
   display: none;
 }
+

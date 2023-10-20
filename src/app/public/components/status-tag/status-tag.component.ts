@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { Input } from '@angular/core';
 
 @Component({
@@ -7,14 +7,16 @@ import { Input } from '@angular/core';
   styleUrls: ['./status-tag.component.css']
 })
 export class StatusTagComponent {
-  @Input() estado: string = 'listo';
+  @Input() estado: string;
   textoEstado: string = '';
-
+  private circleItem = document.querySelector('.circle');
   ngOnInit(): void {
 
     this.actualizarTextoEstado();
   }
-
+  constructor() {
+    this.estado = '';
+  }
 
   private actualizarTextoEstado() {
     switch (this.estado) {

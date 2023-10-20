@@ -1,4 +1,4 @@
-<mat-card>
+<!--mat-card>
   <mat-card-header class="display-large">{{ itemTitle }}</mat-card-header>
   <mat-card-content class="horizontal-layout">
     <div class="text-container">
@@ -29,4 +29,33 @@
     </div>
   </mat-card-content>
 
-</mat-card>
+</mat-card-->
+<div class="content-container horizontal-layout">
+  <div class="data-container">
+    <h1 class="display-large">{{itemTitle}}</h1>
+    <div class="identification-container horizontal-layout">
+      <p class="text-1-0">Pedido {{ orderNumber }}</p>
+      <app-status-tag [estado]="'En fabricacion'"></app-status-tag>
+    </div>
+    <div class="details">
+      <div class="group-1">
+        <p class="text-1">Fecha de entrega: {{ maxDate | date }}</p>
+      </div>
+      <div class="group-2">
+        <p class="text-4">Precio acordado: {{ maxBudget }}</p>
+      </div>
+      <div class="group-3">
+        <p class="text-5">Experto a cargo: {{ user }}</p>
+      </div>
+      <div class="group-4">
+        <p class="text-7">Detalles:</p>
+        <div class="rectangle-3">
+          <p class="text-8">{{ details }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <app-three-d-viewer></app-three-d-viewer>
+  </div>
+</div>

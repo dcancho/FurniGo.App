@@ -1,3 +1,26 @@
+.horizontal-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.identification-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  vertical-align: middle;
+}
+
+
+
+p.text-1-0 {
+  margin: 0;
+}
+
+/*
 mat-card {
   height: 30rem;
   width: 50%px;
@@ -131,14 +154,6 @@ mat-card-header {
   color: #201a18;
 }
 
-.horizontal-layout {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1.5rem;
-}
-
 .identification-container {
   display: flex;
   flex-direction: row;
@@ -151,4 +166,4 @@ mat-card-header {
 
 .media-container {
   height: 100%;
-}
+}*/

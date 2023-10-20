@@ -59,7 +59,8 @@ export class ThreeViewportComponent implements OnInit, AfterViewInit {
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.domElement.style.position = 'absolute';
     renderer.domElement.style.top = '0px';
-    document.body.appendChild(renderer.domElement);
+    const canvasParent = document.getElementsByTagName('canvas')[0].parentElement;
+    canvasParent!.appendChild(renderer.domElement);
     this.controls = new OrbitControls(this.camera, renderer.domElement);
     this.controls.autoRotate = true;
     this.controls.enableZoom = true;

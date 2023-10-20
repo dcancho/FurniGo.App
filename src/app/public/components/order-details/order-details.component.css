@@ -5,18 +5,19 @@ mat-card {
 mat-card-content {
   height: 100%;
 }
+
+mat-card-header {
+  font-size: 57px;
+  font-family: Roboto;
+  line-height:100%;
+  color: #201a18;
+}
+
 .container {
   height: 2px;
   width: 2px;
 }
-mat-card-header {
-  text-align: left;
-  vertical-align: middle;
-  font-size: 57px;
-  font-family: Roboto;
-  line-height: 64%;
-  color: #201a18;
-}
+
 .text-1-0 {
   text-align: left;
   vertical-align: middle;

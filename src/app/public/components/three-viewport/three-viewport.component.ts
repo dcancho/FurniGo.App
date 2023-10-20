@@ -45,7 +45,7 @@ export class ThreeViewportComponent implements OnInit, AfterViewInit {
    */
   private animateModel() {
     if(this.model){
-      this.model.rotation.y += 0.01;
+      this.model.rotation.y += 0.001;
     }
   }
 
@@ -64,7 +64,7 @@ export class ThreeViewportComponent implements OnInit, AfterViewInit {
     this.controls = new OrbitControls(this.camera, renderer.domElement);
     this.controls.autoRotate = true;
     this.controls.enableZoom = true;
-    this.controls.enablePan = false;
+    this.controls.enablePan = true;
     this.controls.update();
   }
 
@@ -123,14 +123,10 @@ export class ThreeViewportComponent implements OnInit, AfterViewInit {
   }
 
   /**
- * Start the rendering loop
- *
  * @private
- * @memberof CubeComponent
+ * @memberof ThreeViewportComponent
  */
   private startRenderingLoop() {
-    //* Renderer
-    // Use canvas element in template
     this.renderer = new THREE.WebGLRenderer({ canvas: this.canvas, antialias: true });
     this.renderer.setPixelRatio(devicePixelRatio);
     this.renderer.setSize(this.canvas.clientWidth, this.canvas.clientHeight);
